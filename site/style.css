@@ -142,14 +142,14 @@ h1,h2,h3{
   display:inline-block;
 }
 .h1-accent::after{
-  content:''; position:absolute; left:0; right:0; bottom:-6px;
-  height:3px;
-  background:linear-gradient(90deg, var(--amber), transparent);
+  content:''; position:absolute; left:0; right:0; bottom:0.02em;
+  height:4px;
+  background:var(--amber);
 }
 
 .lede{
-  font-size:clamp(15px,1.6vw,17px);
-  color:var(--bone-dim); max-width:46ch; margin:0 0 32px;
+  font-size:clamp(15.5px,1.65vw,17.5px);
+  color:var(--bone-dim); max-width:44ch; margin:0 0 36px;
 }
 
 .hero-actions{ display:flex; flex-wrap:wrap; gap:12px; }
@@ -173,20 +173,6 @@ h1,h2,h3{
 }
 .btn-ghost:hover{ border-color:var(--amber); color:var(--amber); }
 
-.hero-stats{
-  display:flex; flex-wrap:wrap; gap:0; margin:40px 0 0;
-  border-top:1px solid var(--line); padding-top:20px;
-}
-.hero-stats div{ padding-right:34px; margin-right:34px; border-right:1px solid var(--line); }
-.hero-stats div:last-child{ border-right:0; margin-right:0; padding-right:0; }
-.hero-stats dt{
-  font-family:var(--mono); font-size:10px; letter-spacing:0.18em;
-  text-transform:uppercase; color:var(--brass); margin-bottom:5px;
-}
-.hero-stats dd{
-  margin:0; font-family:var(--display); font-size:17px;
-  font-weight:500; text-transform:uppercase; letter-spacing:0.02em;
-}
 
 /* ---------- ASSINATURA: comparador antes/depois ---------- */
 .reveal{ margin:0; }
@@ -298,7 +284,7 @@ h1,h2,h3{
 }
 .section-alt > *{ max-width:var(--maxw); margin-inline:auto; }
 
-.section-head{ margin-bottom:clamp(40px,5vw,64px); max-width:62ch; }
+.section-head{ margin-bottom:clamp(40px,5vw,64px); max-width:54ch; }
 .section-head h2{
   font-size:clamp(38px,5.2vw,64px); font-weight:700;
   letter-spacing:-0.018em; margin-bottom:18px;
@@ -570,16 +556,7 @@ h1,h2,h3{
 
 @media (max-width:620px){
   .cards{ grid-template-columns:1fr; }
-  .hero-stats div{
-    padding-right:20px; margin-right:20px;
-  }
-  .hero-stats dd{ font-size:15px; }
-  .steps li{ border-right:0; }
-  .wpp span{ display:none; }
-  .wpp{ padding:14px; border-radius:50%; }
-  .foot{ flex-direction:column; align-items:flex-start; }
-}
-
+    
 @media (prefers-reduced-motion:reduce){
   html{ scroll-behavior:auto; }
   *,*::before,*::after{
@@ -621,4 +598,11 @@ h1,h2,h3{
 @media (max-width:620px){
   .brand img{ height:38px; }
   .foot-brand img{ height:52px; }
+}
+
+/* a instrução do comparador é apoio, não argumento de venda:
+   fica um degrau abaixo da frase principal */
+.lede-hint{
+  display:block; margin-top:10px;
+  font-size:13.5px; color:var(--brass);
 }
