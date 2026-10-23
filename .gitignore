@@ -1,0 +1,14 @@
+# Mídia original — fonte das imagens otimizadas em site/img/
+# Ficam fora do versionamento por peso (o .mov tem 43 MB).
+*.jpg
+*.JPG
+*.jpeg
+*.png
+*.heif
+*.mov
+
+# ...mas o site publicado entra inteiro
+!site/img/*
+
+# macOS
+.DS_Store
