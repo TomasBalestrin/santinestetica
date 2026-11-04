@@ -411,6 +411,25 @@ h1,h2,h3{
 .steps h3{ font-size:22px; margin-bottom:10px; }
 .steps p{ margin:0; color:var(--bone-dim); font-size:14.5px; }
 
+/* ---------- depoimentos em vídeo ---------- */
+.vids{
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+  gap:clamp(20px,3vw,32px);
+  max-width:860px; margin:0 0 clamp(36px,5vw,56px);
+}
+.vid{ margin:0; }
+.vid-wrapper{
+  width:100%; max-width:400px; margin:0 auto;
+  border:1px solid var(--line); border-radius:var(--r);
+  overflow:hidden; background:var(--ink-3);
+}
+.vid figcaption{
+  font-family:var(--mono); font-size:11px;
+  letter-spacing:0.15em; text-transform:uppercase; color:var(--bone-dim);
+  margin-top:14px; text-align:center;
+}
+.vid figcaption span{ color:var(--brass); }
+
 /* ---------- depoimentos ---------- */
 .quotes{
   display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
