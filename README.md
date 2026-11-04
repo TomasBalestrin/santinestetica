@@ -35,4 +35,4 @@ Tipografia: Oswald (títulos), Inter (corpo), JetBrains Mono (rótulos e dados).
 
 ## Pendente
 
-- [ ] Substituir o WhatsApp provisório `5549999999999` pelo número real (5 ocorrências em `index.html`)
+- [x] Substituir o WhatsApp provisório pelo número real `5549999742382`
